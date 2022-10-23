@@ -1,0 +1,107 @@
+/* 既存のCSS */
+#breadcrumbs li {
+    display: inline-block;
+}
+
+#breadcrumbs li::before {
+    content: ">";
+}
+
+#breadcrumbs li:first-child::before {
+    content: none;
+}
+
+
+/* 追加CSSここから */
+/* Bootstrapで書くことにしたので一旦全部消す */
+
+/* ページ全体 */
+.terms li {
+    list-style-type: none;
+}
+
+.modal-body h3 {
+    margin-left: 40px;
+}
+
+/* .container,
+.has_sidebar {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header,
+.site-footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* ヘッダーレイアウト */
+/* .page_item {
+    list-style-type: none;
+    display: inline;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header {
+    background: linear-gradient(to right, gray, white);
+}
+
+.site-header a {
+    color: black;
+} */
+
+/* フロントページレイアウト */
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.card-body {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* .front_page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.front_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_info {
+    width: 400px;
+}
+
+/* 検索結果レイアウト */
+/* .top_about {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* フッターレイアウト */
+.footer {
+    background-color: #f5f5f5;
+}
+
+/* .footer_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-footer {
+    background-color: #90939D;
+} */
