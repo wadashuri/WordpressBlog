@@ -50,30 +50,6 @@
                 </div>
             </div>
             <div class="front_item">
-                <div>
-                    <?php
-                    $args = array(
-                        'post_type' => 'service',  //カスタム投稿タイプ名
-                        'posts_per_page' => 9, // 表示件数
-                    );
-                    ?>
-                </div>
-                <h3>ポートフォリオ一覧</h3>
-                <div class="products row row-cols-1 row-cols-md-3 g-4">
-                    <?php $myposts = new WP_Query($args);
-                    if ($myposts->have_posts()) : while ($myposts->have_posts()) : $myposts->the_post();
-                    ?>
-                            <div class="card" style="width: 15rem; padding: 15px;">
-                                <?php the_post_thumbnail('full'); ?>
-                                <div class="card-body">
-                                    <p class="card-text"><?php the_title(); ?></p>
-                                    <p class="card-title"><?php the_content(); ?></p>
-                                    <a href="/service/onlibraryの使い方/" class="btn btn-primary">もっとみる</a>
-                                </div>
-                            </div>
-                    <?php endwhile;
-                    endif; ?>
-                </div>
             </div>
             <div class="card" style="margin-top: 20px; margin-bottom: 20px">
                 <div class="card-header">
@@ -102,6 +78,30 @@
                         <?php wp_reset_postdata(); ?>
                     </div>
                 </div>
+            </div>
+            <div>
+                <?php
+                $args = array(
+                    'post_type' => 'service',  //カスタム投稿タイプ名
+                    'posts_per_page' => 3, // 表示件数
+                );
+                ?>
+            </div>
+            <h3>Laravelを用いて個人開発したWEBサイト</h3>
+            <div class="products row row-cols-1 row-cols-md-2 g-4" style="margin-top: 20px; margin-bottom: 20px">
+                <?php $myposts = new WP_Query($args);
+                if ($myposts->have_posts()) : while ($myposts->have_posts()) : $myposts->the_post();
+                ?>
+                        <div class="card" style="width: 15rem; padding: 15px;">
+                            <?php the_post_thumbnail('full'); ?>
+                            <div class="card-body">
+                                <p class="card-text"><?php the_title(); ?></p>
+                                <p class="card-title"><?php the_content(); ?></p>
+                                <a href="/service/onlibraryの使い方/" class="btn btn-primary">もっとみる</a>
+                            </div>
+                        </div>
+                <?php endwhile;
+                endif; ?>
             </div>
         </div>
         <div class="col-sm-2">
