@@ -122,7 +122,7 @@
                 </div>
             </div>
             <!-- 検索窓 -->
-            <?php get_search_form(); ?>
+            <!-- get_search_form -->
         </div>
     </nav>
 </header>
