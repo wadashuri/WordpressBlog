@@ -14,7 +14,7 @@
         <h3 class="card-header"><?php the_title(); ?></h3>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="card-body text-dark">
-                    <?php the_content(); ?>
+                <?php the_field('editor'); ?>
                 </div>
             <?php endwhile; ?>
         <?php endif; ?>
