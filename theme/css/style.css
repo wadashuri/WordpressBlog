@@ -16,7 +16,7 @@
 /* Bootstrapで書くことにしたので一旦全部消す */
 
 /* ページ全体 */
-.terms li {
+/* .terms li {
     list-style-type: none;
 }
 
@@ -36,10 +36,10 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /* ヘッダーレイアウト */
-.page_item {
+/* .page_item {
     list-style-type: none;
     display: inline;
 }
@@ -56,10 +56,10 @@
 
 .site-header a {
     color: black;
-}
+} */
 
 /* フロントページレイアウト */
-.products {
+/* .products {
     display: flex;
     justify-content: space-between;
     margin-right: 0px;
@@ -83,16 +83,16 @@
 
 .top_info {
     width: 400px;
-}
+} */
 
 /* 検索結果レイアウト */
-.top_about {
+/* .top_about {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 /* フッターレイアウト */
-.footer {
+/* .footer {
     background-color: #f5f5f5;
 }
 
@@ -104,4 +104,4 @@
 
 .site-footer {
     background-color: #90939D;
-}
+} */

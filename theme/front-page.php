@@ -8,15 +8,14 @@
                 </div>
                 <div class="card-body">
                     <div class="card-title">
-                        <h5>Laravelとは</h5>
+                        <h5>OnLibrary開発者ブログとは</h5>
                     </div>
                     <div class="card-text">
-                        <p>
-                            一言でいうならばフルスタックフレームワーク
-                            です。<br><br>
-                            このサイトは基本的になんでも出来るフレームワーク「Laravel」を愛するweb系エンジニアが<br>
-                            業務などで書いたコードをアウトプットし理解をさらに深めるとともに、覚えた技術を忘れないための場所にしようと思ってます。<br><br>
-                            みんなでララベル頑張りましょう！
+                        <p>OnLibraryというWEBサービスを開発する際用いた技術を共有する場所です。
+                            <br><br>
+                            サービスを作って終わりにするのではなく、どのように作ったか公開することで覚えた技術を忘れないための場所にしようと思ってます。<br><br>
+                            主にプログラミング言語「php」のフレームワーク「Laravel」のことについて発信していきます。<br><br>
+                            webサービス作りは本当に楽しいので一緒に頑張りましょう!
                         </p>
                     </div>
                 </div>
@@ -87,7 +86,7 @@
                 );
                 ?>
             </div>
-            <h3>Laravelを用いて個人開発したWEBサイト</h3>
+            <h3>Webサービス一覧</h3>
             <div class="products row row-cols-1 row-cols-md-2 g-4" style="margin-top: 20px; margin-bottom: 20px">
                 <?php $myposts = new WP_Query($args);
                 if ($myposts->have_posts()) : while ($myposts->have_posts()) : $myposts->the_post();
