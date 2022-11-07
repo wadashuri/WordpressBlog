@@ -65,7 +65,7 @@
                 <?php $myposts = new WP_Query($args);
                 if ($myposts->have_posts()) : while ($myposts->have_posts()) : $myposts->the_post();
                 ?>
-                        <div class="card" style="margin: 15px;">
+                        <div class="card" style="width: 15rem; margin: 15px;">
                             <?php the_post_thumbnail('full'); ?>
                             <div class="card-body">
                                 <p class="card-text"><?php the_title(); ?></p>
