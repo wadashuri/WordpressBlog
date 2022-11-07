@@ -18,6 +18,9 @@
                 </div>
             <?php endwhile; ?>
         <?php endif; ?>
+        <div class="col-sm-2 d-none d-md-block">
+            <?php get_sidebar(); ?>
+        </div>
     </div>
 </main>
 <?php get_footer(); ?>
