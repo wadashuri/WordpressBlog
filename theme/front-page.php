@@ -60,12 +60,12 @@
                 );
                 ?>
             </div>
-            <h3>Webサービス一覧</h3>
+            <h3 class="border-bottom border-secondary">Webサービス一覧</h3>
             <div class="products row row-cols-1 row-cols-md-3 g-4" style="margin-top: 20px; margin-bottom: 20px">
                 <?php $myposts = new WP_Query($args);
                 if ($myposts->have_posts()) : while ($myposts->have_posts()) : $myposts->the_post();
                 ?>
-                        <div class="card" style="width: 15rem; margin: 15px;">
+                        <div class="card" style="padding: 15px;">
                             <?php the_post_thumbnail('full'); ?>
                             <div class="card-body">
                                 <p class="card-text"><?php the_title(); ?></p>
