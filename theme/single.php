@@ -3,7 +3,7 @@
 ?>
 <main class="container">
     <div class="row">
-        <div class="col-sm-10">
+        <div class="col-lg-10">
             <div>
                 <p><?php the_time('Y.n.d'); ?>更新</p>
             </div>
@@ -29,7 +29,7 @@
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
-        <div class="col-sm-2 d-none d-md-block">
+        <div class="col-lg-2 d-none d-lg-block">
             <?php get_sidebar(); ?>
         </div>
     </div>

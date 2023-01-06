@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main class="container">
     <div class="row">
-        <div class="col-sm-10">
+        <div class="col-lg-10">
             <div class="card" style="margin-top: 20px;">
                 <div class="card-header">
                     <h5>このサイトについて</h5>
@@ -76,7 +76,7 @@
                 endif; ?>
             </div>
         </div>
-        <div class="col-sm-2 d-none d-md-block">
+        <div class="col-lg-2 d-none d-lg-block">
             <?php get_sidebar(); ?>
         </div>
     </div>
